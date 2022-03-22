@@ -1,0 +1,17 @@
+.display {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: right;
+    border: 0;
+    color: white;
+    
+}
+
+
+
+.input {
+    font-size: 15px;
+    margin-right: 5px;
+}

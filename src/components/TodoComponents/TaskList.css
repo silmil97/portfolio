@@ -1,0 +1,18 @@
+.tasks {
+    background-color: #393E46;
+    opacity: 100%;
+
+}
+
+.task {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.task button {
+    width: 15%;
+    border: 0;
+    background-color:  #00ADB5;
+    font-size: large;
+}
