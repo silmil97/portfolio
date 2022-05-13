@@ -1,13 +1,15 @@
-@keyframes fadeIn2 {
+/* @keyframes fadeIn2 {
   0%   {width: 70%; opacity: 0; box-shadow: none;}
   100% {width: 100% ;  opacity: 1; box-shadow: none;}
-}
+} */
 .Projects {
-  width: 80%;
+  /*width: 80%*/
+  width: 100%;
   margin: auto;
+  padding-top:30px ;
   padding-bottom: 20px; 
   background-color: rgba(38, 45, 54, 1);
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
   
 .Project {
@@ -21,30 +23,33 @@
 
 .description {
   text-align: left;
-  width: 100%;
+  width: 80%;
   padding-left: 20px;
   padding-right: 20px;  
 }
 
 .description p {
   position: relative;
-  top: -20px;
+  /*war vorher -20*/
+  top: -10px;
 }
 
 .Calc-pic {
-  width: 10vw;
+  width: 20%;
   height: auto;
   background-image: url(../../../public/annie-spratt-r_m-JKJVto0-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  /*display bei beiden bildern*/
 }
 
 .List-pic {
-  width: 10vw;
+  width: 20%;
   height: auto;
   background-image: url(../../../public/marissa-grootes-ck0i9Dnjtj0-unsplash.jpg);
   background-size: cover;
   background-position: center;
+  
 }
 
 
@@ -72,7 +77,7 @@
 
 .ProjectButton {
   position: relative;
-  left: 35%;
+  left: 25%;
   border: solid white 1px;
   margin: 1px;
   background: transparent;
@@ -89,7 +94,6 @@
   animation-name: fadeIn2;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
-
 }
 
 .Calculator {

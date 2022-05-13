@@ -12,7 +12,7 @@ export function TaskList(props) {
                     className='task'
                     key={taskObj.key}
                 >
-                    <p>
+                    <p className='taskText'>
                         {taskObj.task}
                     </p>
                     <button type='button' onClick={() => handleDelete(taskObj.key)}>X</button>

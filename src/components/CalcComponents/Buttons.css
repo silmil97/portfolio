@@ -1,6 +1,6 @@
 @keyframes fadeIn {
-    0%   {height: 150px; width: 200px; opacity: 0;}
-    100% {height: 250px; width: 300px; opacity: 1;}
+    0%   {height: 60vmin; width: 60vmin; opacity: 0;}
+    100% {width: 80vmin; height: 80vmin; opacity: 1;}
 }
   
 
@@ -9,10 +9,12 @@
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows:  auto auto auto auto auto;  
-    width: 300px;
-    height: 250px; 
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:  auto auto auto auto auto;
+    width: 80vmin;
+    height: 80vmin; 
+    max-width: 300px;
+    max-height: 250px;
     column-gap: 0;
     row-gap: 0;
     
@@ -23,9 +25,13 @@
     background-color: #F1E0AC;
 }
 
+#DEL {
+    padding: -20px;
+}
+
 .calcButton {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
+    font-size: 0.8rem;
     background-color: #98B4AA;
     border: 0;
 }

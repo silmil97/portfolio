@@ -5,13 +5,15 @@ export function TaskForm(props) {
     const handleChange = props.onChange;
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} >
             <input
+                id='toDoInput'
                 type="text"
                 value={input}
                 placeholder="Add Task"
                 onChange={handleChange}
                 name="text"
+                autoComplete="off"
             />
             <button  className='AddTask'>
                 Add Task

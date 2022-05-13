@@ -1,21 +1,19 @@
 import './App.css';
 import { NavBar } from './Deutsch/NavBar';
-import { AboutDe } from './Deutsch/AboutDe';
-import { Projekte } from './Deutsch/Projekte'
-import { CoverDe } from './Deutsch/CoverDe';
+import { Pages } from './Deutsch/Pages';
+import React from 'react';
+import { useState } from 'react';
 
 function App() {
-  console.log('hi')
+  const [Page, setPage] = useState('home')
+  const handleNavBarClick = (page) => {setPage(page)}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <NavBar />
-        <CoverDe />
+      <header>
+        <NavBar onClick={handleNavBarClick} /> 
       </header>
-      <main>
-        <AboutDe />
-        <Projekte/>
-      </main>
+      <Pages activePage={Page}/>
     </div>
   );
 }

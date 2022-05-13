@@ -9,9 +9,10 @@ export function NavBar(props) {
                 <a onClick={handleClick}>EN</a>
             </div>
             <div className='NavLinks'>
-                <a href="#Projects">Projekte</a>
-                <a href="#About">About</a>
-                <a className='Kontakt' href="#Contact">Kontakt</a>
+                <button onClick={() => handleClick('home')}>Home</button>
+                <button onClick={() => handleClick('projects')}>Projekte</button>
+                <button onClick={() => handleClick('about')}>About</button>
+                <button onClick={() => handleClick('contact')}>Kontakt</button>
             </div>
         </div>
     )
