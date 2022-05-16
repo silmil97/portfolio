@@ -3,6 +3,7 @@ import { Buttons } from "./Buttons";
 import { Textfield } from './TextField';
 import { handleCalculation, checkDot, display } from './CalculatorLogic';
 import "./Calculator.css";
+import React from 'react';
 
 
 const operators1 = {
@@ -108,5 +109,5 @@ export function Calculator() {
             <Textfield value={input} />
             <Buttons input={input} onclick={handleClick} />
         </div>
-    );
+    )
 }
