@@ -1,0 +1,205 @@
+@keyframes fadeIn {
+    0% {width: 50px; height:50px; border-radius: 300px;}
+    100% {width: 300px; height: 300px; border-radius: 0px;}
+}
+
+@keyframes fadeIn2 {
+    0% {width: 0px; height: 0px;}
+    100% {width: 100px; height: 100px;}
+}
+
+@keyframes O {
+    0% {width: 60px; height:0px;}
+    100% {width: 60px; height: 60px;}
+}
+
+@keyframes xdraw {
+    0% {height: 0px; width: 100px;}
+    100% {height: 100px; width: 100px;}
+}
+
+@keyframes winnerAnimation {
+    0% {height: 0; width: 0; overflow: hidden;}
+    50% {height: 0; width: 0; overflow:hidden; font-size: 0px; }
+    
+}
+
+@keyframes winnerAnimation1 {
+    0% {width: 0; height: 0;}
+    100% {}
+}
+
+.grid {
+    animation: fadeIn 1s cubic-bezier(0.4,0.0,1,1);
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    border: solid 1px none;
+    width: max-content;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+}
+
+.gridfield {
+    border: solid 1px black;
+    display: grid;
+    justify-content: center;
+    background-color: white;
+}
+
+#TL { border-top: 0; border-left: 0; }
+#TC { border-top: 0; }
+#TR { border-top: 0; border-right: 0; }
+#CL { border-left: 0; }
+#CR { border-right: 0; }
+#BL { border-bottom: 0; border-left: 0; }
+#BC { border-bottom: 0; }
+#BR { border-bottom: 0; border-right: 0; }
+
+.x1 {
+    height: 80px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(45deg);
+    position: relative; 
+}
+
+.x2 {
+    height: 80px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(-45deg);
+    position: relative;
+}
+
+.xcontainer {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    animation: xdraw 0.2s cubic-bezier(0.4,0,0.2,1);
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.O {
+    width: 55px;
+    height: 55px;
+    border: solid 5px black;
+    border-radius: 40px;    
+}
+
+.O-nimation {
+    animation: O 0.2s cubic-bezier(0.4,0,0.2,1);
+    overflow: hidden;
+    margin: 20px auto;
+    width: max-content;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+}
+
+.game {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.winner {
+    background-color: white;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    height: 300px;
+    width: 300px;
+    font-size: xx-large;
+    position: absolute;
+    z-index: 1;
+    animation: winnerAnimation 1s ease-in;
+    align-self: center;
+}
+
+#winnerLine0 {
+    width: 270px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    margin-top: 45px;
+    animation: winnerAnimation1 0.5s ease-in-out;
+}
+
+
+#winnerLine1 {
+    width: 270px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    margin-top: 145px;
+    animation: winnerAnimation1 0.5s ease-in-out;
+}
+
+#winnerLine2 {
+    width: 270px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    margin-top: 245px;
+    animation: winnerAnimation1 0.5s ease-in-out;
+}
+
+#winnerLine3 {
+    width: 270px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 52px;
+    top: 20px;
+    animation: winnerAnimation1 0.5s ease-in-out;
+}
+
+#winnerLine4 {
+    width: 270px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    animation: winnerAnimation1 0.5s ease-in-out;
+}
+
+#winnerLine5 {
+    width: 270px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    right: 74px;
+    top: 20px;  
+    animation: winnerAnimation1 0.5s ease-in-out;
+}
+
+#winnerLine6 {
+    width: 370px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    margin-top: 145px;
+    transform: rotate(45deg);
+    animation: winnerAnimation1 0.5s ease-in-out;
+}
+
+#winnerLine7 {
+    width: 370px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    margin-top: 145px;
+    transform: rotate(-45deg);
+    animation: winnerAnimation1 0.5s ease-in-out;
+}
+
+.newGame {
+    width: 300px;
+}

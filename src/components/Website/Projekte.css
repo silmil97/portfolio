@@ -1,24 +1,21 @@
-/* @keyframes fadeIn2 {
-  0%   {width: 70%; opacity: 0; box-shadow: none;}
-  100% {width: 100% ;  opacity: 1; box-shadow: none;}
-} */
+
 .Projects {
-  /*width: 80%*/
   width: 100%;
   margin: auto;
   padding-top:30px ;
   padding-bottom: 20px; 
   background-color: rgba(38, 45, 54, 1);
-  /* border-radius: 10px; */
 }
   
 .Project {
   width: 80%;
   margin: 20px auto;
   display: flex;
+  flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #393E46;
 }
 
 .description {
@@ -51,8 +48,6 @@
   background-position: center;
   
 }
-
-
 
 .ProjectDescription {
   display: flex;
@@ -91,13 +86,11 @@
 }
 
 .ToDoList {
-  animation-name: fadeIn2;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out;
+  display:block;
 }
 
 .Calculator {
-  border-radius: 10px;
+  margin: 10px auto;
   overflow: hidden;
-  margin: auto;
+  border-radius: 10px;
 }
