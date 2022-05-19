@@ -41,19 +41,23 @@ export function  Kontakt() {
             setEmail('');
             setMessage('');
             setEmailSent(true);
+            alert('Die Nachricht wurde gesendet')
         } else {
-            alert('Please fill in all fields.');
+            alert('Bitte alle Felder ausfüllen.');
         }
     }
 
     return (
         <div className="contact">
-            <input type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
-            <input type="email" placeholder="E-Mail" value={email} onChange={e => setEmail(e.target.value)} />
-            <input type="subject" placeholder="Betreff" value={subject} onChange={e => setSubject(e.target.value)} />
-            <textarea placeholder="Nachricht" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-            <button onClick={submit}>Send Message</button>
-            <span className={emailSent ? 'visible' : 'invisible'}>Danke für die Nachricht, ich werde mich schnellstmöglich melden!{/*Thank you for your message, we will be in touch in no time!*/}</span> 
+            <h2><span>K</span>ontakt</h2>
+            <div className="inputs">
+                <input className="contact-input" type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
+                <input className="contact-input" type="email" placeholder="E-Mail" value={email} onChange={e => setEmail(e.target.value)} />
+                <input className="contact-input" type="subject" placeholder="Betreff" value={subject} onChange={e => setSubject(e.target.value)} />
+                <textarea className="message" placeholder="Nachricht" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                <button className="subbut" onClick={submit}>Nachricht senden</button>
+                <span className={emailSent ? 'visible' : 'invisible'}>Danke für die Nachricht, ich werde mich schnellstmöglich melden!{/*Thank you for your message, we will be in touch in no time!*/}</span> 
+            </div>
         </div>
     )
 }

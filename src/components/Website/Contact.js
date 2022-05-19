@@ -19,7 +19,7 @@ export function  Contact() {
     
     const submit = () => {
         if (isValidEmail){
-            alert('Enter a valid email!');
+            alert('Please enter a valid email');
             return
         }
         if (name && email && message && subject) {
@@ -41,6 +41,7 @@ export function  Contact() {
             setEmail('');
             setMessage('');
             setEmailSent(true);
+            alert('The message has been sent.')
         } else {
             alert('Please fill in all fields.');
         }
@@ -48,12 +49,15 @@ export function  Contact() {
 
     return (
         <div className="contact">
-            <input type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
-            <input type="email" placeholder="E-Mail" value={email} onChange={e => setEmail(e.target.value)} />
-            <input type="subject" placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)} />
-            <textarea placeholder="Message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-            <button onClick={submit}>Send Message</button>
-            <span className={emailSent ? 'visible' : 'invisible'}>Thank you for your message, we will be in touch in no time!</span> 
+            <h2><span>K</span>ontakt</h2>
+            <div className="inputs">
+                <input className="contact-input" type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
+                <input className="contact-input" type="email" placeholder="E-Mail" value={email} onChange={e => setEmail(e.target.value)} />
+                <input className="contact-input" type="subject" placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)} />
+                <textarea className="message" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                <button className="subbut" onClick={submit}>Send Message</button>
+                <span className={emailSent ? 'visible' : 'invisible'}>Thank you for your message, we will be in touch in no time!</span> 
+            </div>
         </div>
     )
 }

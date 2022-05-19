@@ -67,7 +67,7 @@ export function Projekte() {
             <h3>Tic Tac Toe</h3>
             <div className='Project'>
                 <div className='ProjectDescription'>
-                    <div className='List-pic'></div>
+                    <div className='Tic-pic'></div>
                     <div className='description'>
                         <p>Eine Tic Tac Toe App</p>
                         <p>Benutzte Technologien: React.js, CSS, JSX.</p>
@@ -77,6 +77,17 @@ export function Projekte() {
             </div>
             <button className='ProjectButton' onClick={() => { visibleDemo == 'ticTacToe' ? setVisibileDemo('') : setVisibileDemo('ticTacToe') }}>Demo</button>
             <a href='https://github.com/silmil97/TicTacToe' target='_blank'><button className='ProjectButton'>Code</button></a>
+            <h3>Yelp API App</h3>
+            <div className='Project'>
+                <div className='ProjectDescription'>
+                    <div className='Yelp-pic'></div>
+                    <div className='description'>
+                        <p>Eine Suchmaschine für Restaurants mit Class Components</p>
+                        <p>Benutzte Technologien: React.js, CSS, JSX.</p>
+                    </div>
+                </div>
+            </div>
+            <a href='https://github.com/silmil97/Ravenous' target='_blank'><button className='ProjectButton'>Code</button></a>
         </div>
     );
 }
