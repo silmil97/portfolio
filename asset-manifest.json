@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.16a23bbe.css",
-    "main.js": "/portfolio/static/js/main.19aa11b9.js",
+    "main.css": "/portfolio/static/css/main.0cc60f21.css",
+    "main.js": "/portfolio/static/js/main.1ecca556.js",
     "static/media/annie-spratt-r_m-JKJVto0-unsplash.jpg": "/portfolio/static/media/annie-spratt-r_m-JKJVto0-unsplash.59c4eba14715b46c57c0.jpg",
     "static/media/aedrian-VbUWr1tf5rI-unsplash.jpg": "/portfolio/static/media/aedrian-VbUWr1tf5rI-unsplash.47638fe91acf8b925526.jpg",
     "static/media/marissa-grootes-ck0i9Dnjtj0-unsplash.jpg": "/portfolio/static/media/marissa-grootes-ck0i9Dnjtj0-unsplash.c41824f4734d4f55a2b8.jpg",
+    "static/media/jeremy-perkins-UgNjyPkphtU-unsplash.jpg": "/portfolio/static/media/jeremy-perkins-UgNjyPkphtU-unsplash.d8e77dd8b00368a9002e.jpg",
+    "static/media/pizza.jpg": "/portfolio/static/media/pizza.721d6e5c9832e9e15feb.jpg",
     "index.html": "/portfolio/index.html",
-    "main.16a23bbe.css.map": "/portfolio/static/css/main.16a23bbe.css.map",
-    "main.19aa11b9.js.map": "/portfolio/static/js/main.19aa11b9.js.map"
+    "main.0cc60f21.css.map": "/portfolio/static/css/main.0cc60f21.css.map",
+    "main.1ecca556.js.map": "/portfolio/static/js/main.1ecca556.js.map"
   },
   "entrypoints": [
-    "static/css/main.16a23bbe.css",
-    "static/js/main.19aa11b9.js"
+    "static/css/main.0cc60f21.css",
+    "static/js/main.1ecca556.js"
   ]
 }
