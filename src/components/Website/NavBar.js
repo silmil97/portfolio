@@ -6,8 +6,8 @@ export function NavBar() {
     return (
         <div className="topnav" id="myTopnav">
             <div className='Language'>
-                <a className="link" href='/de/'>DE</a>
-                <a className="link" href='/en/'>EN</a>
+                <Link className="link" to='/de/'>DE</Link>
+                <Link className="link" to='/en/'>EN</Link>
             </div>
             {    
                 window.location.pathname == '/de/' 
