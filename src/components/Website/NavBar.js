@@ -17,18 +17,18 @@ export function NavBar() {
                     (
                         <div className='NavLinks'>
                             <Link className="link" to="de/">Home</Link>
-                            <Link className="link" to="/projekte">Projekte</Link>
-                            <Link className="link" to="/about">About</Link>
-                            <Link className="link" to="/kontakt">Kontakt</Link>
+                            <Link className="link" to="/de/projekte">Projekte</Link>
+                            <Link className="link" to="/de/about">About</Link>
+                            <Link className="link" to="/de/kontakt">Kontakt</Link>
                         </div>
                     ) 
                 :
                     (
                         <div className='NavLinks'>
                             <Link className="link" to="en/">Home</Link>
-                            <Link className="link" to="/projekte">Projects</Link>
-                            <Link className="link" to="/about">About</Link>
-                            <Link className="link" to="/kontakt">Contact</Link>
+                            <Link className="link" to="/en/projekte">Projects</Link>
+                            <Link className="link" to="/en/about">About</Link>
+                            <Link className="link" to="/en/kontakt">Contact</Link>
                         </div>
                     )
             }
