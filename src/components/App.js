@@ -23,7 +23,6 @@ function App() {
         <Route path="de/about" element={<AboutDe />} />
         <Route path="de/projekte" element={<Projekte className="Projekte"/>} />
         <Route path="de/kontakt" element={<Kontakt />} />
-        <Route path="portfolio/" element={<div className="App-header"> <CoverEn /></div>} />
         <Route path="en/" element={<div className="App-header"> <CoverEn /></div>} />
         <Route path="en/about" element={<AboutEn />} />
         <Route path="en/projekte" element={<Projects className="Projekte"/>} />
