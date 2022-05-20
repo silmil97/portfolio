@@ -8,8 +8,8 @@ export function NavBar() {
     return (
         <div className="topnav" id="myTopnav">
             <div className='Language'>
-                <Link className="link" to='de/' onClick={() => setLang('de')}>DE</Link>
-                <Link className="link" to='en/' onClick={() => setLang('en')}>EN</Link>
+                <Link className="link" to="de/" onClick={() => setLang('de')}>DE</Link>
+                <Link className="link" to="en/" onClick={() => setLang('en')}>EN</Link>
             </div>
             {    
                 lang == 'de' 
@@ -23,14 +23,14 @@ export function NavBar() {
                         </div>
                     ) 
                 :
-                (
-                    <div className='NavLinks'>
-                        <Link className="link" to="en/">Home</Link>
-                        <Link className="link" to="en/projekte">Projects</Link>
-                        <Link className="link" to="en/about">About</Link>
-                        <Link className="link" to="en/kontakt">Contact</Link>
-                    </div>
-                )
+                    (
+                        <div className='NavLinks'>
+                            <Link className="link" to="en/">Home</Link>
+                            <Link className="link" to="en/projekte">Projects</Link>
+                            <Link className="link" to="en/about">About</Link>
+                            <Link className="link" to="en/kontakt">Contact</Link>
+                        </div>
+                    )
             }
         </div>
     )
