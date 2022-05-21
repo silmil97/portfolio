@@ -1,6 +1,6 @@
 import React from 'react';
 import './SideBar.css'
-import { stack as Menu } from 'react-burger-menu';
+import { push as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom'
 import { useState } from 'react';
 
