@@ -1,3 +1,4 @@
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: rgb(36, 34, 39, 1);
@@ -49,3 +50,9 @@
     display: none;
 }
 
+
+@media (max-width:759.5px) {
+    .topnav {
+        display: none;
+    }
+}

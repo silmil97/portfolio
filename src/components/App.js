@@ -8,6 +8,7 @@ import { CoverEn } from './Website/CoverEn';
 import { AboutEn } from './Website/AboutEn';
 import { Contact } from './Website/Contact';
 import { Projects } from './Website/Projects';
+import SideBar  from './Website/SideBar'
 import { Routes, Route} from "react-router-dom";
 
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <header>
+        <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
         <NavBar /> 
       </header>
       <Routes>

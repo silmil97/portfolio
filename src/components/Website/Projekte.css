@@ -111,3 +111,11 @@
   overflow: hidden;
   border-radius: 10px;
 }
+
+@media (max-width:760px) {
+  .Project {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+  }
+}

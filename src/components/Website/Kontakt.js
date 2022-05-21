@@ -49,7 +49,7 @@ export function  Kontakt() {
 
     return (
         <div className="contact">
-            <h2><span>K</span>ontakt</h2>
+            <h2 className="contactTitle"><span>K</span>ontakt</h2>
             <div className="inputs">
                 <input className="contact-input" type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
                 <input className="contact-input" type="email" placeholder="E-Mail" value={email} onChange={e => setEmail(e.target.value)} />
